@@ -158,6 +158,64 @@ img {
   left: 0;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 420px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.janre__films {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: Roboto;
+  letter-spacing: 0.02px;
+  color: #f1f1f1;
+  width: 160px;
+  border-bottom: 0.4px solid #000;
+}
+
+.janre__films:hover {
+  color: #2196F3;
+}
+
+.dropdown-content .janre__films {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .container .content {
   border-top: 3px solid chocolate;
   width: 1200px;
